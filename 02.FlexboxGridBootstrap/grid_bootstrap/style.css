@@ -1,0 +1,13 @@
+.mi-contenedor {
+    background: #0D6EFD;
+    color: white;
+}
+
+.mi-contenedor > div {
+    background: #0D6EFD;
+    padding: 15px;
+}
+
+.mi-contenedor > div > div {
+    border: 2px solid whitesmoke;
+}
