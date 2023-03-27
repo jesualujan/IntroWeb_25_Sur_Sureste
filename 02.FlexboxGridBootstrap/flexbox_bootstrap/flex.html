@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta es una manera de importar Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Aqui importamos nuestra clase html -->
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <!-- Vamos a hacer nuestra propia documenración de Flexbox Boostrap -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!-- Comenzamos con los dos fipos de Display Flex que existen -->
+                <h4>Tipos de Display Flex</h4>
+                <hr>
+                
+                <!-- Con "d-flex" le decimos a Boostrap que queremos que los hijos de nuestro container puedan
+                     hacer uso de todas las bondades de Flexbox, admeás de que ocupamos el 100% del espacio disponible -->
+                <div class="bg-primary text-white d-flex">
+                    <p>Display Flex <strong>.d-flex</strong></p>
+                </div>
+
+                <br>
+                
+                <!-- A diferencia de "d-fex", "d-inline-flex" sólo utiliza el espacio necesario -->
+                <div class="bg-primary text-white d-inline-flex">
+                    <p>Display InLine Flex <strong>.d-inline-flex</strong></p>
+                </div>
+
+                <br>
+                <br>
+                
+                <!-- Enseguida mostramos como se puede cambiar de dirección el Flexbox -->
+                <div class="row">
+                    <div class="col">
+                        <h4>Direction</h4>
+                        <hr>
+                        <h5>Sobre filas</h5>
+                        
+                        <!-- Con la propiedad "flex-row" de "d-flex" podemos acomodar nuestras cajas en formato vertical
+                             y usar todos los beneficios de Flexbox -->
+                        <p>.flex-row</p>
+                        <div class="mi-contenedor d-flex flex-row">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                        </div>
+                        
+                        <!-- Con la propiedad "flex-row-reverse" nosotros vamos a invertor el orden y en lugar de empezaer de
+                             izquierda a derecha, lo hacemos de derecha a izquierda -->
+                        <p>.flex-row-reverse</p>
+                        <div class="mi-contenedor d-flex flex-row-reverse">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                        </div>
+                        
+                        <br>
+                        <h5>Sobre columnas</h5>
+                        
+                        <!-- Con la propiedad "flex-column" de "d-flex" podemos acomodar nuestras cajas en formato horizontal
+                             y usar todos los beneficios de Flexbox -->
+                        <p>.flex-column</p>
+                        <div class="mi-contenedor d-flex flex-column">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                        </div>
+                        
+                        <!-- Con la propiedad "flex-column-reverse" nosotros vamos a invertor el orden y en lugar de empezaer de
+                             arriba a abajo, lo hacemos de abajo a arriba -->
+                        <p>.flex-column-reverse</p>
+                        <div class="mi-contenedor d-flex flex-column-reverse">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                
+
+                <!-- Enseguida veremos como podemos justificar los elementos que se encuentren dentro de un flexbox -->
+                <div class="row">
+                    <div class="col">
+                        <h4>Justify Content</h4>
+                        <hr>
+                        
+                        <!-- Si nosotros queremos que nuestros elementos queden todos del lado izquierdo uno tras otro
+                             lo podemos hacer con la propiedad "justify-content-start" -->
+                        <p>.justify-content-start</p>
+                        <div class="mi-contenedor d-flex justify-content-start">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                        <!-- Si nosotros queremos que nuestros elementos queden centrados y uno tras otro
+                             lo podemos hacer con la propiedad "justify-content-center" -->
+                        <p>.justify-content-center</p>
+                        <div class="mi-contenedor d-flex justify-content-center">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+                        
+
+                        <!-- Si nosotros queremos que nuestros elementos queden todos del lado derecho uno tras otro
+                             lo podemos hacer con la propiedad "justify-content-end" -->
+                        <p>.justify-content-end</p>
+                        <div class="mi-contenedor d-flex justify-content-end">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+                        
+                        <!-- Si nosotros queremos que nuestros elementos queden distribuidos a lo largo
+                             de nuestra pantalla y sin espacios a los lados lo hacemos con "justify-content-between" -->
+                        <p>.justify-content-between</p>
+                        <div class="mi-contenedor d-flex justify-content-between">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+                        
+
+                        <!-- Si nosotros queremos que nuestros elementos queden distribuidos a lo largo
+                             de nuestra pantalla y con espacios a los lados lo hacemos con "justify-content-around" -->
+                        <p>.justify-content-arround</p>
+                        <div class="mi-contenedor d-flex justify-content-around">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                        <!-- Si nosotros queremos que nuestros elementos queden distribuidos a lo largo
+                             de nuestra pantalla y con espacios iguales entre elementos lo hacemos con "justify-content-around" -->
+                             <p>.justify-content-evenly</p>
+                             <div class="mi-contenedor d-flex justify-content-evenly">
+                                 <div>Caja 1</div>
+                                 <div>Caja 2</div>
+                                 <div>Caja 3</div>
+                             </div>
+
+                    </div>
+                </div>
+
+                <br>
+
+
+                <!-- Enseguida veremos la propiedad de flex-fill -->
+                <div class="row">
+                    <div class="col">
+                        <h4>Flex Fill</h4>
+                        <hr>
+
+                        <p>.flex-fill</p>
+                        <div class="mi-contenedor d-flex">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Enseguida veremos alinear los elementos que se encuentren dentro de un flexbox -->
+                <div class="row">
+                    <div class="col">
+                        <h4>Align Items</h4>
+                        <hr>
+                        
+
+                        <!-- Si queremos alinear los elementos hasta arriba, lo hacemos con la propiedad "align-items-start"-->
+                        <p>.align-items-start</p>
+                        <div class="mi-contenedor-2 d-flex align-items-start">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                        <!-- Si queremos alinear los elementos hasta abajo, lo hacemos con la propiedad "align-items-end"-->
+                        <p>.align-items-end</p>
+                        <div class="mi-contenedor-2 d-flex align-items-end">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+
+                        <!-- Si queremos alinear los elementos al centro, lo hacemos con la propiedad "align-items-center"-->
+                        <p>.align-items-center</p>
+                        <div class="mi-contenedor-2 d-flex align-items-center">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                        <!-- Si queremos alinear los de acuerdo al texto, lo hacemos con la propiedad "align-items-baseline"-->
+                        <p>.align-items-baseline</p>
+                        <div class="mi-contenedor-2 d-flex align-items-baseline">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                        <!-- Si queremos alinear de tal manera que ocupemos todo el espacio disponible, 
+                             lo hacemos con la propiedad "align-items-"-->
+                        <p>.align-items-sm-stretch</p>
+                        <div class="mi-contenedor-2 d-flex align-items-stretch">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <br>
+
+                <!-- Enseguida veremos alinear los elementos que se encuentren dentro de un flexbox -->
+                <div class="row">
+                    <div class="col">
+                        <h4>Align Self</h4>
+                        <hr>
+
+                        <div class="mi-contenedor-2 d-flex">
+                            <div class="align-self-start">.align-self-start</div>
+                            <div class="align-self-center">.align-self-center</div>
+                            <div class="align-self-end">.align-self-end</div>
+                            <div class="align-self-baseline">.align-self-baseline</div>
+                            <div class="align-self-stretch">.align-self-stretch</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+
+
+                <!-- Enseguida veremos la propiedad de Wrap -->
+                <div class="row">
+                    <div class="col">
+                        <h4>Wrap</h4>
+                        <hr>
+
+                        <!-- Le decimos al contenedor que todas las cajas intenten estar dentro del contenedor en una
+                             sola fila -->
+                        <p>.flex-nowrap</p>
+                        <div class="mi-contenedor-3 d-flex flex-nowrap">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                            <div>Caja 5</div>
+                            <div>Caja 6</div>
+                            <div>Caja 7</div>
+                            <div>Caja 8</div>
+                            <div>Caja 9</div>
+                            <div>Caja 10</div>
+                            <div>Caja 11</div>
+                            <div>Caja 12</div>
+                            <div>Caja 13</div>
+                            <div>Caja 14</div>
+                            <div>Caja 15</div>
+                        </div>
+
+                        <!-- Le decimos al contenedor que las cajas ocupen el espacio necesario en la primera fila
+                             y en caso de no poder se cree una segunda fila. -->
+                        <p>.flex-wrap</p>
+                        <div class="mi-contenedor-3 d-flex flex-wrap">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                            <div>Caja 5</div>
+                            <div>Caja 6</div>
+                            <div>Caja 7</div>
+                            <div>Caja 8</div>
+                            <div>Caja 9</div>
+                            <div>Caja 10</div>
+                            <div>Caja 11</div>
+                            <div>Caja 12</div>
+                            <div>Caja 13</div>
+                            <div>Caja 14</div>
+                            <div>Caja 15</div>
+                        </div>
+
+                        <br>
+
+                        <!-- Le decimos al contenedor que las cajas ocupen el espacio necesario en la primera fila
+                             y en caso de no poder se cree una segunda fila, se ordena de mayor a menor. -->
+                        <p>.flex-wrap-reverse</p>
+                        <div class="mi-contenedor-3 d-flex flex-wrap-reverse">
+                            <div>Caja 1</div>
+                            <div>Caja 2</div>
+                            <div>Caja 3</div>
+                            <div>Caja 4</div>
+                            <div>Caja 5</div>
+                            <div>Caja 6</div>
+                            <div>Caja 7</div>
+                            <div>Caja 8</div>
+                            <div>Caja 9</div>
+                            <div>Caja 10</div>
+                            <div>Caja 11</div>
+                            <div>Caja 12</div>
+                            <div>Caja 13</div>
+                            <div>Caja 14</div>
+                            <div>Caja 15</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                 <!-- Enseguida veremos la propiedad de Order -->
+                 <div class="row">
+                    <div class="col">
+                        <h4>Order</h4>
+                        <hr>
+
+                        <div class="mi-contenedor-3 d-flex">
+                            <div class="order-3">Caja 1</div>
+                            <div class="order-2">Caja 2</div>
+                            <div class="order-1">Caja 3</div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- Esta es una manera de importar Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

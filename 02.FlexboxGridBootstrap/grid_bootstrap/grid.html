@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <title>Grid Boostrap</title>
+    </head>
+    
+    <body>
+        <!-- Grid sin especificar el tamaño de la columna (lo mismo que ya vimos en flexbox) -->
+        <h4>Grid sin especificar el tamaño de la columna.</h4>
+        <hr>
+        <div class="mi-contenedor">
+            <div class="row border-white">
+                <div class="col">
+                    Columna 1
+                </div>
+                <div class="col">
+                    Columna 2
+                </div>
+                <div class="col">
+                    Columna 3
+                </div>
+            </div>
+        </div>
+       
+        <div class="mi-contenedor">
+            <div class="row">
+                <div class="col">
+                    Columna 1
+                </div>
+                <div class="col">
+                    Columna 2
+                </div>
+                <div class="col">
+                    Columna 3
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Grid especificando el tamaño de la columna -->
+        <h4>Grid especificando el tamaño de la columna.</h4>
+        <hr>
+        <div class="mi-contenedor">
+            <div class="row">
+                <div class="col">
+                    El resto
+                </div>
+                
+                <div class="col-4">
+                    4/12
+                </div>
+
+                <div class="col-12">
+                    12/12
+                </div>
+
+                <div class="col-6">
+                    6/12
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Grid especificando los diferentes tamaños de la pantalla -->
+        <h4>Grid especificando los diferentes tamaños de la pantalla.</h4>
+        <hr>
+
+        <div class="mi-contenedor">
+            <div class="row">
+                <div class="col-sm-8">col-sm-8</div>
+                <div class="col-sm-4">col-sm-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">col-lg-6</div>
+                <div class="col-lg-6">col-lg-6</div>
+            </div>
+
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

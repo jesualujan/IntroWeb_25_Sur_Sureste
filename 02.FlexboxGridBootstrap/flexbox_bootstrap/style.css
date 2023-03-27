@@ -1,0 +1,37 @@
+
+.mi-contenedor {
+    background: #0D6EFD;
+    color: white;
+}
+
+.mi-contenedor > div {
+    background: #0D6EFD;
+    border: 2px solid whitesmoke;
+    padding: 15px;
+}
+
+
+.mi-contenedor-2 {
+    background: #6AC6B9;
+    color: white;
+    height: 100px;
+}
+
+.mi-contenedor-2 > div {
+    background: #6AC6B9;
+    border: 2px solid whitesmoke;
+    padding: 15px;
+}
+
+.mi-contenedor-3 {
+    background: #7668AE;
+    color: white;
+    height: 100px;
+}
+
+.mi-contenedor-3 > div {
+    background: #7668AE;
+    border: 2px solid whitesmoke;
+    padding: 15px 20px;
+}
+
