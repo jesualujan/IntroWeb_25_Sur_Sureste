@@ -36,7 +36,55 @@ body {
 }
 
 #comments img {
+    object-fit: cover;
     width: 250px;
     height: 250px;
     border-radius: 50%;
+}
+
+#info-one h3{
+    text-align: center;
+}
+
+#info-one h3 p{
+    font-weight: bold;
+    font-size: medium;
+    margin: 0 auto;
+}
+
+
+#info-two{
+    background: #f1f1f1;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#info-two p{
+    text-align: justify;
+}
+
+#info-two .container h2 p{
+    flex-basis: auto;
+}
+
+footer{
+    background: url(../images/Contact\ us-pana.svg) no-repeat 75%;
+    padding: 10px 10px 10px 10px;
+}
+
+/* RESPONSIVE DESIGN EN CASO DE SER NECESARIO USANDO MEDIA QUERIES*/
+
+@media screen and (max-width: 1000px) {
+    footer{
+        background: url(../images/Contact\ us-pana.svg) no-repeat 75%;
+        padding: 10px 10px 10px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 570px) {
+    footer{
+        padding: 10px 10px 10px 10px;
+    }    
 }
